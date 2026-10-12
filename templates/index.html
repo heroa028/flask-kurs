@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forside</title>
+</head>
+<body>
+    <h1>{{ navn }}</h1>
+    <h2>Om meg:</h2>
+    <p>Jeg heter henry og er 17 år gammel. jeg går i {{klasse}} </p>
+    {% if alder >= 18 %}
+        <p>Du er myndig</p>
+    {% else %}
+        <p>Du er under 18 år.</p>
+        {%endif%}
+</body>
+</html>
