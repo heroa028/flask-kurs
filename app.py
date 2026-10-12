@@ -11,9 +11,9 @@ def index():
 
 @app.route("/kurs")
 def kurs():
-    kurs = request.form["kurs"]
+    kurs = request.form.get('kurs')
     kursliste=["python","flask", "javascript","linux"]
-    return render_template("kurs.html, kursliste=kursliste")
+    return render_template("kurs.html", kursliste=kursliste)
 
 @app.route("/kontakt", methods=["GET", "POST"])
 def kontakt():

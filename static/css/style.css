@@ -33,3 +33,7 @@ button {
     margin-top: 20px;
     padding: 10px 20px;
 }
+img {
+    max-width: 300px;
+    height: auto;
+}
